@@ -1,0 +1,190 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    margin:0;
+}
+
+.container{
+    background-color:#004466;
+    width: 100%;
+    height: 100%;
+    margin:0;  
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/* main{
+    width: 100vw;
+    height: 270px;
+    background-color: white;
+    margin:auto;
+    border-radius: 15px;
+} */
+
+
+
+/* aside{
+    width:280px;
+    height:300px;
+    background-color: lightblue;
+    margin-right:10px;
+    display:flex;
+    flex-direction: column;
+} */
+
+
+/* .quizplace{
+    width:100%;
+    height:100px;
+    background-color: black;
+} */
+
+/* .answer_options{
+} */
+/* This is about links that are on the top right corner */
+.links{
+    position: absolute;
+    top:10px;
+    right:10px;   
+}
+
+ .link{
+    width: 100%;
+    height:50px;
+    background-color: red;
+    margin-bottom:10px;
+    /* padding:5px; */
+    border-radius:15px;
+    /* flex:1; */
+    display:flex;
+    justify-items:center ;
+    align-items: center;
+} 
+
+.link i{
+    font-size: 1.5rem;
+    margin:10px;
+    color:white;
+}
+
+.link:hover{
+    cursor: pointer;
+}
+
+.github_link{
+    background-color: #6E5494;
+}
+
+.twitter_link{
+    background-color: #1DA1F2;
+}
+
+/* We endee here with the links */
+
+
+/* Placing of the actual quiz */
+
+.quizplace{
+    width:65%;
+    /* height:100%; */
+    margin:auto;
+    background: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border:2px solid black;
+    
+    
+}
+
+
+.quizplace > .question{
+    /* color:purple; */
+    /* display:block; */
+    /* height:10%; */
+    width:100%;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.answer_options{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* height:100%; */
+    /* background: purple; */
+    /* border-radius: 150px; */
+    /* padding:10px; */
+    
+    /* flex-direction: column; */
+    /* align-items:flex-start; */
+
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+
+.answer{
+    width:49%;
+    height:20px;
+    background-color: #00AAFF;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    /* margin:15px auto; */
+    /* margin-left:10px;
+    margin-right:10px; */
+    text-align: center;
+   
+}
+.btn.display{
+   width:20%;
+   height:40px;   
+   margin:10px;
+}
+.btn.no_display{
+    display:none;
+}
+
+.btn.display:hover{
+    cursor: pointer;
+}
+
+
+/* CSS after the game is finished; */
+
+.container.win{
+    background:green;
+}
+
+.container.lose{
+    background:darkred;
+}
+
+
+.answer_1.win,
+.answer_2.win,
+.answer_3.win,
+.answer_4.win
+{
+    background:green;
+}
+
+.answer_1.lose,
+.answer_2.lose,
+.answer_3.lose,
+.answer_.lose
+{
+    background:darkred;
+}
